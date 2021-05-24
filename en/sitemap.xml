@@ -2,55 +2,55 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>localhost/about/</loc>
+    <loc>https://emma-kang.github.io/about/</loc>
     <lastmod>2021-05-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>localhost/categories/</loc>
+    <loc>https://emma-kang.github.io/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="localhost/fr/categories/"
+                href="https://emma-kang.github.io/fr/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="localhost/categories/"
+                href="https://emma-kang.github.io/categories/"
                 />
   </url><url>
-    <loc>localhost/</loc>
+    <loc>https://emma-kang.github.io/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="localhost/fr/"
+                href="https://emma-kang.github.io/fr/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="localhost/"
+                href="https://emma-kang.github.io/"
                 />
   </url><url>
-    <loc>localhost/series/</loc>
+    <loc>https://emma-kang.github.io/series/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="localhost/fr/series/"
+                href="https://emma-kang.github.io/fr/series/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="localhost/series/"
+                href="https://emma-kang.github.io/series/"
                 />
   </url><url>
-    <loc>localhost/tags/</loc>
+    <loc>https://emma-kang.github.io/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="localhost/fr/tags/"
+                href="https://emma-kang.github.io/fr/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="localhost/tags/"
+                href="https://emma-kang.github.io/tags/"
                 />
   </url>
 </urlset>
