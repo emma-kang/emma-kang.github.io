@@ -2,17 +2,32 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://emma-kang.github.io/projects/spring-booking-webservice/</loc>
+    <lastmod>2021-05-31T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://emma-kang.github.io/projects/new-interface-integration/</loc>
+    <lastmod>2021-05-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://emma-kang.github.io/projects/paypal-integration/</loc>
+    <lastmod>2021-01-31T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://emma-kang.github.io/projects/reengineering-process/</loc>
+    <lastmod>2021-01-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://emma-kang.github.io/projects/express-bookbox/</loc>
+    <lastmod>2020-07-12T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://emma-kang.github.io/projects/django-rest-api/</loc>
     <lastmod>2020-05-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://emma-kang.github.io/projects/spring-web-board/</loc>
+    <lastmod>2020-05-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://emma-kang.github.io/projects/toll-system-management/</loc>
     <lastmod>2019-06-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://emma-kang.github.io/about/</loc>
-    <lastmod>2021-05-23T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://emma-kang.github.io/</loc>
-    <lastmod>2020-05-08T00:00:00+00:00</lastmod>
+    <lastmod>2021-05-31T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
@@ -25,13 +40,13 @@
                 />
   </url><url>
     <loc>https://emma-kang.github.io/series/personal-project/</loc>
-    <lastmod>2020-05-08T00:00:00+00:00</lastmod>
+    <lastmod>2021-05-31T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://emma-kang.github.io/projects/</loc>
-    <lastmod>2020-05-08T00:00:00+00:00</lastmod>
+    <lastmod>2021-05-31T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://emma-kang.github.io/series/</loc>
-    <lastmod>2020-05-08T00:00:00+00:00</lastmod>
+    <lastmod>2021-05-31T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
@@ -43,8 +58,11 @@
                 href="https://emma-kang.github.io/series/"
                 />
   </url><url>
+    <loc>https://emma-kang.github.io/about/</loc>
+    <lastmod>2021-05-23T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://emma-kang.github.io/series/work-project/</loc>
-    <lastmod>2019-06-01T00:00:00+00:00</lastmod>
+    <lastmod>2021-05-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://emma-kang.github.io/categories/</loc>
     <xhtml:link

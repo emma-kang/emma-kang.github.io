@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="map[name:Emma Kang]">
+<meta name="description" content="As the 3rd data provider changed, related processes in the system were needed to update as new requirements. The processes are an important part in the system since it is associated with toll transactions. Previous processes were designed as SQL procedures but it had a drawback that was hard to track exception. Therefore, new processes were decided to implement as Java processes.
+Plan  Investigate the system database table and design new database structure for the transactions Based on the new data table design, planed Java processes  Issues  After implemented and released to production, it has issues on performance since the process had bad logic to handle huge transaction data." />
+<meta name="keywords" content="" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="https://emma-kang.github.io/projects/reengineering-process/" />
+
+
+    <title>
+        
+            [Work] Re-engineering process :: EMMA KANG 
+        
+    </title>
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css">
+
+
+
+<link rel="stylesheet" href="https://emma-kang.github.io/main.c46cbca46fa76c0fcd3da8313ecf4adee5fb3ffb0288c0902d7e90aead220d79.css">
+
+
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="https://emma-kang.github.io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://emma-kang.github.io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://emma-kang.github.io/favicon-16x16.png">
+    <link rel="manifest" href="https://emma-kang.github.io/site.webmanifest">
+    <link rel="mask-icon" href="https://emma-kang.github.io/safari-pinned-tab.svg" color="#1b1c1d">
+    <link rel="shortcut icon" href="https://emma-kang.github.io/favicon.ico">
+    <meta name="msapplication-TileColor" content="#1b1c1d">
+    <meta name="theme-color" content="#1b1c1d">
+
+
+
+<meta itemprop="name" content="[Work] Re-engineering process">
+<meta itemprop="description" content="As the 3rd data provider changed, related processes in the system were needed to update as new requirements. The processes are an important part in the system since it is associated with toll transactions. Previous processes were designed as SQL procedures but it had a drawback that was hard to track exception. Therefore, new processes were decided to implement as Java processes.
+Plan  Investigate the system database table and design new database structure for the transactions Based on the new data table design, planed Java processes  Issues  After implemented and released to production, it has issues on performance since the process had bad logic to handle huge transaction data."><meta itemprop="datePublished" content="2021-01-18T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2021-01-18T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="189"><meta itemprop="image" content="https://emma-kang.github.io"/>
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://emma-kang.github.io"/>
+
+<meta name="twitter:title" content="[Work] Re-engineering process"/>
+<meta name="twitter:description" content="As the 3rd data provider changed, related processes in the system were needed to update as new requirements. The processes are an important part in the system since it is associated with toll transactions. Previous processes were designed as SQL procedures but it had a drawback that was hard to track exception. Therefore, new processes were decided to implement as Java processes.
+Plan  Investigate the system database table and design new database structure for the transactions Based on the new data table design, planed Java processes  Issues  After implemented and released to production, it has issues on performance since the process had bad logic to handle huge transaction data."/>
+
+
+
+
+    <meta property="og:title" content="[Work] Re-engineering process" />
+<meta property="og:description" content="As the 3rd data provider changed, related processes in the system were needed to update as new requirements. The processes are an important part in the system since it is associated with toll transactions. Previous processes were designed as SQL procedures but it had a drawback that was hard to track exception. Therefore, new processes were decided to implement as Java processes.
+Plan  Investigate the system database table and design new database structure for the transactions Based on the new data table design, planed Java processes  Issues  After implemented and released to production, it has issues on performance since the process had bad logic to handle huge transaction data." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://emma-kang.github.io/projects/reengineering-process/" /><meta property="og:image" content="https://emma-kang.github.io"/><meta property="article:section" content="projects" />
+<meta property="article:published_time" content="2021-01-18T00:00:00&#43;00:00" />
+<meta property="article:modified_time" content="2021-01-18T00:00:00&#43;00:00" />
+<meta property="og:see_also" content="https://emma-kang.github.io/projects/new-interface-integration/" /><meta property="og:see_also" content="https://emma-kang.github.io/projects/paypal-integration/" /><meta property="og:see_also" content="https://emma-kang.github.io/projects/toll-system-management/" />
+
+
+
+
+
+
+
+    <meta property="article:published_time" content="2021-01-18 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+    </head>
+
+    
+        <body>
+    
+    
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="https://emma-kang.github.io/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">&gt;</span>
+            <span class="logo__text">E.KANG</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="https://emma-kang.github.io/about/">About</a></li><li><a href="https://emma-kang.github.io/projects/">Projects</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            
+            </p>
+        </div>
+
+        <article>
+            <h2 class="post-title"><a href="https://emma-kang.github.io/projects/reengineering-process/">[Work] Re-engineering process</a></h2>
+
+            
+            
+            
+
+            <div class="post-content">
+                <p>As the 3rd data provider changed, related processes in the system were needed to update as new requirements. The processes are an important part in the system since it is associated with toll transactions. Previous processes were designed as SQL procedures but it had a drawback that was hard to track exception. Therefore, new processes were decided to implement as Java processes.</p>
+<h3 id="plan">Plan</h3>
+<ul>
+<li>Investigate the system database table and design new database structure for the transactions</li>
+<li>Based on the new data table design, planed Java processes</li>
+</ul>
+<h3 id="issues">Issues</h3>
+<ul>
+<li>After implemented and released to production, it has issues on performance since the process had bad logic to handle huge transaction data. At first, there was no choice but to use the code according to the business logic.</li>
+<li>To solve the above issue, refactored all processes in loop code. After refactored the code, the processing time was decreased 3 times than the previous.</li>
+</ul>
+<h3 id="tech-stack">Tech Stack</h3>
+<ul>
+<li>T-SQL (Table design, procedures)</li>
+<li>Java 8</li>
+<li>shell scripts</li>
+</ul>
+<p>I was able to learn how to handle big transaction data in Java source code and also it was a good chance to enhance my knowledge about exception handling.</p>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+            
+            
+  		</div>
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>&copy; 2021</span>
+            <span><a href="https://emma-kang.github.io">Emma Kang</a></span>
+            <span><a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></span>
+            <span><a href="https://emma-kang.github.io/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a></span>
+            
+        </div>
+    </div>
+    
+    
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>Powered by <a href="http://gohugo.io">Hugo</a></span><span>Made with &#10084; by <a href="https://github.com/rhazdon">Djordje Atlialp</a></span>
+        </div>
+    </div>
+    
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+<script type="text/javascript" src="https://emma-kang.github.io/bundle.min.599099f1f14b78b657d524b28e10e0c5098e7cd46e9c7aed73d577068a276c3ff1bb234cbf29cb313333e83cf411727b43157c91ce5b809e2ffc81664614608e.js" integrity="sha512-WZCZ8fFLeLZX1SSyjhDgxQmOfNRunHrtc9V3BoonbD/xuyNMvynLMTMz6Dz0EXJ7QxV8kc5bgJ4v/IFmRhRgjg=="></script>
+
+
+
+    </body>
+</html>

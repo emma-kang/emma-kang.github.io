@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="map[name:Emma Kang]">
+<meta name="description" content="This is personal project for study room booking webservice. The purpose of this project is to reinforce the knowledge of Spring framework, security, and Junit testing.
+I am currently working on this project with learning testing online lecture.
+@Service public class BookingServiceImpl implements BookingService { final static Logger logger = LoggerFactory.getLogger(BookingServiceImpl.class); private final BookingDAO bookingDAO; public BookingServiceImpl(BookingDAO bookingDAO) { this.bookingDAO = bookingDAO; } @Override public BookingDTO getBookingInfoByUserId(int userid) { return bookingDAO." />
+<meta name="keywords" content="" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="https://emma-kang.github.io/projects/spring-booking-webservice/" />
+
+
+    <title>
+        
+            [Personal] Spring Booking Web Service :: EMMA KANG 
+        
+    </title>
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css">
+
+
+
+<link rel="stylesheet" href="https://emma-kang.github.io/main.c46cbca46fa76c0fcd3da8313ecf4adee5fb3ffb0288c0902d7e90aead220d79.css">
+
+
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="https://emma-kang.github.io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://emma-kang.github.io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://emma-kang.github.io/favicon-16x16.png">
+    <link rel="manifest" href="https://emma-kang.github.io/site.webmanifest">
+    <link rel="mask-icon" href="https://emma-kang.github.io/safari-pinned-tab.svg" color="#1b1c1d">
+    <link rel="shortcut icon" href="https://emma-kang.github.io/favicon.ico">
+    <meta name="msapplication-TileColor" content="#1b1c1d">
+    <meta name="theme-color" content="#1b1c1d">
+
+
+
+<meta itemprop="name" content="[Personal] Spring Booking Web Service">
+<meta itemprop="description" content="This is personal project for study room booking webservice. The purpose of this project is to reinforce the knowledge of Spring framework, security, and Junit testing.
+I am currently working on this project with learning testing online lecture.
+@Service public class BookingServiceImpl implements BookingService { final static Logger logger = LoggerFactory.getLogger(BookingServiceImpl.class); private final BookingDAO bookingDAO; public BookingServiceImpl(BookingDAO bookingDAO) { this.bookingDAO = bookingDAO; } @Override public BookingDTO getBookingInfoByUserId(int userid) { return bookingDAO."><meta itemprop="datePublished" content="2021-05-31T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2021-05-31T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="301"><meta itemprop="image" content="https://emma-kang.github.io"/>
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://emma-kang.github.io"/>
+
+<meta name="twitter:title" content="[Personal] Spring Booking Web Service"/>
+<meta name="twitter:description" content="This is personal project for study room booking webservice. The purpose of this project is to reinforce the knowledge of Spring framework, security, and Junit testing.
+I am currently working on this project with learning testing online lecture.
+@Service public class BookingServiceImpl implements BookingService { final static Logger logger = LoggerFactory.getLogger(BookingServiceImpl.class); private final BookingDAO bookingDAO; public BookingServiceImpl(BookingDAO bookingDAO) { this.bookingDAO = bookingDAO; } @Override public BookingDTO getBookingInfoByUserId(int userid) { return bookingDAO."/>
+
+
+
+
+    <meta property="og:title" content="[Personal] Spring Booking Web Service" />
+<meta property="og:description" content="This is personal project for study room booking webservice. The purpose of this project is to reinforce the knowledge of Spring framework, security, and Junit testing.
+I am currently working on this project with learning testing online lecture.
+@Service public class BookingServiceImpl implements BookingService { final static Logger logger = LoggerFactory.getLogger(BookingServiceImpl.class); private final BookingDAO bookingDAO; public BookingServiceImpl(BookingDAO bookingDAO) { this.bookingDAO = bookingDAO; } @Override public BookingDTO getBookingInfoByUserId(int userid) { return bookingDAO." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://emma-kang.github.io/projects/spring-booking-webservice/" /><meta property="og:image" content="https://emma-kang.github.io"/><meta property="article:section" content="projects" />
+<meta property="article:published_time" content="2021-05-31T00:00:00&#43;00:00" />
+<meta property="article:modified_time" content="2021-05-31T00:00:00&#43;00:00" />
+<meta property="og:see_also" content="https://emma-kang.github.io/projects/express-bookbox/" /><meta property="og:see_also" content="https://emma-kang.github.io/projects/django-rest-api/" /><meta property="og:see_also" content="https://emma-kang.github.io/projects/spring-web-board/" />
+
+
+
+
+
+
+
+    <meta property="article:published_time" content="2021-05-31 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+    </head>
+
+    
+        <body>
+    
+    
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="https://emma-kang.github.io/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">&gt;</span>
+            <span class="logo__text">E.KANG</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="https://emma-kang.github.io/about/">About</a></li><li><a href="https://emma-kang.github.io/projects/">Projects</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            
+            </p>
+        </div>
+
+        <article>
+            <h2 class="post-title"><a href="https://emma-kang.github.io/projects/spring-booking-webservice/">[Personal] Spring Booking Web Service</a></h2>
+
+            
+            
+            
+
+            <div class="post-content">
+                <p>This is personal project for study room booking webservice. The purpose of this project is to reinforce the knowledge of Spring framework, security, and Junit testing.</p>
+<p>I am currently working on this project with learning testing online lecture.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#a6e22e">@Service</span>
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">BookingServiceImpl</span> <span style="color:#66d9ef">implements</span> BookingService <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">final</span> <span style="color:#66d9ef">static</span> Logger logger <span style="color:#f92672">=</span> LoggerFactory<span style="color:#f92672">.</span><span style="color:#a6e22e">getLogger</span><span style="color:#f92672">(</span>BookingServiceImpl<span style="color:#f92672">.</span><span style="color:#a6e22e">class</span><span style="color:#f92672">);</span>
+    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">final</span> BookingDAO bookingDAO<span style="color:#f92672">;</span>
+
+    <span style="color:#66d9ef">public</span> <span style="color:#a6e22e">BookingServiceImpl</span><span style="color:#f92672">(</span>BookingDAO bookingDAO<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        <span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">bookingDAO</span> <span style="color:#f92672">=</span> bookingDAO<span style="color:#f92672">;</span>
+    <span style="color:#f92672">}</span>
+
+    <span style="color:#a6e22e">@Override</span>
+    <span style="color:#66d9ef">public</span> BookingDTO <span style="color:#a6e22e">getBookingInfoByUserId</span><span style="color:#f92672">(</span><span style="color:#66d9ef">int</span> userid<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        <span style="color:#66d9ef">return</span> bookingDAO<span style="color:#f92672">.</span><span style="color:#a6e22e">getBookingInfoByUserId</span><span style="color:#f92672">(</span>userid<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+
+    <span style="color:#a6e22e">@Override</span>
+    <span style="color:#66d9ef">public</span> List<span style="color:#f92672">&lt;</span>BookingDTO<span style="color:#f92672">&gt;</span> <span style="color:#a6e22e">getBookingInfoByRoom</span><span style="color:#f92672">(</span><span style="color:#66d9ef">int</span> roomid<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        <span style="color:#66d9ef">return</span> bookingDAO<span style="color:#f92672">.</span><span style="color:#a6e22e">getBookingInfoByRoom</span><span style="color:#f92672">(</span>roomid<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+
+    <span style="color:#a6e22e">@Override</span>
+    <span style="color:#66d9ef">public</span> Map<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">,</span> String<span style="color:#f92672">&gt;</span> <span style="color:#a6e22e">addNewBooking</span><span style="color:#f92672">(</span>BookingDTO bookingDTO<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        Map<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">,</span> String<span style="color:#f92672">&gt;</span> response <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> HashMap<span style="color:#f92672">&lt;&gt;();</span>
+        logger<span style="color:#f92672">.</span><span style="color:#a6e22e">info</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Creating new booking schedule for userID:&#34;</span> <span style="color:#f92672">+</span> bookingDTO<span style="color:#f92672">.</span><span style="color:#a6e22e">getUserId</span><span style="color:#f92672">());</span>
+
+        <span style="color:#66d9ef">try</span> <span style="color:#f92672">{</span>
+            <span style="color:#66d9ef">int</span> resultCode <span style="color:#f92672">=</span> bookingDAO<span style="color:#f92672">.</span><span style="color:#a6e22e">addNewBooking</span><span style="color:#f92672">(</span>bookingDTO<span style="color:#f92672">);</span>
+
+            <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>resultCode <span style="color:#f92672">==</span> 1<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+                response<span style="color:#f92672">.</span><span style="color:#a6e22e">put</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;status&#34;</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;201&#34;</span><span style="color:#f92672">);</span>
+            <span style="color:#f92672">}</span> <span style="color:#66d9ef">else</span> <span style="color:#f92672">{</span>
+                response<span style="color:#f92672">.</span><span style="color:#a6e22e">put</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;status&#34;</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;500&#34;</span><span style="color:#f92672">);</span>
+            <span style="color:#f92672">}</span>
+        <span style="color:#f92672">}</span> <span style="color:#66d9ef">catch</span> <span style="color:#f92672">(</span>Exception e<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+            e<span style="color:#f92672">.</span><span style="color:#a6e22e">printStackTrace</span><span style="color:#f92672">();</span>
+            logger<span style="color:#f92672">.</span><span style="color:#a6e22e">error</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Error occurred while creating new booking&#34;</span> <span style="color:#f92672">+</span> bookingDTO<span style="color:#f92672">.</span><span style="color:#a6e22e">toString</span><span style="color:#f92672">());</span>
+        <span style="color:#f92672">}</span>
+
+        <span style="color:#66d9ef">return</span> response<span style="color:#f92672">;</span>
+    <span style="color:#f92672">}</span>
+
+    <span style="color:#a6e22e">@Override</span>
+    <span style="color:#66d9ef">public</span> Map<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">,</span> String<span style="color:#f92672">&gt;</span> <span style="color:#a6e22e">updateBooking</span><span style="color:#f92672">(</span><span style="color:#66d9ef">int</span> bookingId<span style="color:#f92672">,</span> Map<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">,</span> String<span style="color:#f92672">&gt;</span> info<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        Map<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">,</span> String<span style="color:#f92672">&gt;</span> response <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> HashMap<span style="color:#f92672">&lt;&gt;();</span>
+        SimpleDateFormat sdFormat <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> SimpleDateFormat<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;yyyy-MM-dd HH:mm:ss&#34;</span><span style="color:#f92672">);</span>
+        logger<span style="color:#f92672">.</span><span style="color:#a6e22e">info</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Updating booking schedule for bookId:&#34;</span> <span style="color:#f92672">+</span> bookingId<span style="color:#f92672">);</span>
+
+        <span style="color:#66d9ef">try</span> <span style="color:#f92672">{</span>
+            <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>info<span style="color:#f92672">.</span><span style="color:#a6e22e">isEmpty</span><span style="color:#f92672">())</span>
+                <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">null</span><span style="color:#f92672">;</span>
+
+            BookingDTO booking <span style="color:#f92672">=</span> bookingDAO<span style="color:#f92672">.</span><span style="color:#a6e22e">getBookingInfoByBookingId</span><span style="color:#f92672">(</span>bookingId<span style="color:#f92672">);</span>
+            <span style="color:#75715e">// convert string to date
+</span><span style="color:#75715e"></span>            Date startDateTime <span style="color:#f92672">=</span> sdFormat<span style="color:#f92672">.</span><span style="color:#a6e22e">parse</span><span style="color:#f92672">(</span>info<span style="color:#f92672">.</span><span style="color:#a6e22e">get</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;startTime&#34;</span><span style="color:#f92672">));</span>
+            Date endDateTime <span style="color:#f92672">=</span> sdFormat<span style="color:#f92672">.</span><span style="color:#a6e22e">parse</span><span style="color:#f92672">(</span>info<span style="color:#f92672">.</span><span style="color:#a6e22e">get</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;endTime&#34;</span><span style="color:#f92672">));</span>
+            <span style="color:#75715e">// set updated date times
+</span><span style="color:#75715e"></span>            booking<span style="color:#f92672">.</span><span style="color:#a6e22e">setStartTime</span><span style="color:#f92672">(</span>startDateTime<span style="color:#f92672">);</span>
+            booking<span style="color:#f92672">.</span><span style="color:#a6e22e">setEndTime</span><span style="color:#f92672">(</span>endDateTime<span style="color:#f92672">);</span>
+
+            <span style="color:#66d9ef">int</span> resultCode <span style="color:#f92672">=</span> bookingDAO<span style="color:#f92672">.</span><span style="color:#a6e22e">updateBooking</span><span style="color:#f92672">(</span>booking<span style="color:#f92672">);</span>
+
+            <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>resultCode <span style="color:#f92672">==</span> 1<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+                response<span style="color:#f92672">.</span><span style="color:#a6e22e">put</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;status&#34;</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;200&#34;</span><span style="color:#f92672">);</span>
+            <span style="color:#f92672">}</span> <span style="color:#66d9ef">else</span> <span style="color:#f92672">{</span>
+                response<span style="color:#f92672">.</span><span style="color:#a6e22e">put</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;status&#34;</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;500&#34;</span><span style="color:#f92672">);</span>
+                response<span style="color:#f92672">.</span><span style="color:#a6e22e">put</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;message&#34;</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;Error occurred while processing query&#34;</span><span style="color:#f92672">);</span>
+            <span style="color:#f92672">}</span>
+
+        <span style="color:#f92672">}</span> <span style="color:#66d9ef">catch</span> <span style="color:#f92672">(</span>ParseException e<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+            e<span style="color:#f92672">.</span><span style="color:#a6e22e">printStackTrace</span><span style="color:#f92672">();</span>
+            logger<span style="color:#f92672">.</span><span style="color:#a6e22e">error</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Error occurring while canceling booking&#34;</span> <span style="color:#f92672">+</span> e<span style="color:#f92672">);</span>
+        <span style="color:#f92672">}</span>
+
+        <span style="color:#66d9ef">return</span> response<span style="color:#f92672">;</span>
+    <span style="color:#f92672">}</span>
+
+    <span style="color:#a6e22e">@Override</span>
+    <span style="color:#66d9ef">public</span> Map<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">,</span> String<span style="color:#f92672">&gt;</span> <span style="color:#a6e22e">cancelBooking</span><span style="color:#f92672">(</span><span style="color:#66d9ef">int</span> bookingId<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        Map<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">,</span> String<span style="color:#f92672">&gt;</span> response <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> HashMap<span style="color:#f92672">&lt;&gt;();</span>
+        logger<span style="color:#f92672">.</span><span style="color:#a6e22e">info</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Canceling booking schedule for bookId:&#34;</span> <span style="color:#f92672">+</span> bookingId<span style="color:#f92672">);</span>
+
+        <span style="color:#66d9ef">try</span> <span style="color:#f92672">{</span>
+            <span style="color:#66d9ef">int</span> resultCode <span style="color:#f92672">=</span> bookingDAO<span style="color:#f92672">.</span><span style="color:#a6e22e">cancelBooking</span><span style="color:#f92672">(</span>bookingId<span style="color:#f92672">);</span>
+
+            <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>resultCode <span style="color:#f92672">==</span> 1<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+                response<span style="color:#f92672">.</span><span style="color:#a6e22e">put</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;status&#34;</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;200&#34;</span><span style="color:#f92672">);</span>
+            <span style="color:#f92672">}</span> <span style="color:#66d9ef">else</span> <span style="color:#f92672">{</span>
+                response<span style="color:#f92672">.</span><span style="color:#a6e22e">put</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;status&#34;</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;500&#34;</span><span style="color:#f92672">);</span>
+                response<span style="color:#f92672">.</span><span style="color:#a6e22e">put</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;message&#34;</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;Error occurred while processing query&#34;</span><span style="color:#f92672">);</span>
+            <span style="color:#f92672">}</span>
+        <span style="color:#f92672">}</span> <span style="color:#66d9ef">catch</span> <span style="color:#f92672">(</span>Exception e<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+            e<span style="color:#f92672">.</span><span style="color:#a6e22e">printStackTrace</span><span style="color:#f92672">();</span>
+            logger<span style="color:#f92672">.</span><span style="color:#a6e22e">error</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Error occurring while canceling booking&#34;</span> <span style="color:#f92672">+</span> e<span style="color:#f92672">);</span>
+        <span style="color:#f92672">}</span>
+
+        <span style="color:#66d9ef">return</span> response<span style="color:#f92672">;</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span>
+</code></pre></div>
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+            
+            
+  		</div>
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>&copy; 2021</span>
+            <span><a href="https://emma-kang.github.io">Emma Kang</a></span>
+            <span><a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></span>
+            <span><a href="https://emma-kang.github.io/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a></span>
+            
+        </div>
+    </div>
+    
+    
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>Powered by <a href="http://gohugo.io">Hugo</a></span><span>Made with &#10084; by <a href="https://github.com/rhazdon">Djordje Atlialp</a></span>
+        </div>
+    </div>
+    
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+<script type="text/javascript" src="https://emma-kang.github.io/bundle.min.599099f1f14b78b657d524b28e10e0c5098e7cd46e9c7aed73d577068a276c3ff1bb234cbf29cb313333e83cf411727b43157c91ce5b809e2ffc81664614608e.js" integrity="sha512-WZCZ8fFLeLZX1SSyjhDgxQmOfNRunHrtc9V3BoonbD/xuyNMvynLMTMz6Dz0EXJ7QxV8kc5bgJ4v/IFmRhRgjg=="></script>
+
+
+
+    </body>
+</html>

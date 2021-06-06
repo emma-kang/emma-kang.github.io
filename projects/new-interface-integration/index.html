@@ -5,19 +5,17 @@
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="author" content="map[name:Emma Kang]">
-<meta name="description" content="This is simple survey API with Python and Django. The API was implemented by using Django REST framework and the webservice only allow GET.
-The sample data was stored on PostgreSQLServer and deployed on Heroku.
-Github
-https://stark-citadel-85128.herokuapp.com/api/" />
+<meta name="description" content="A new interface had to be applied to one type of existing system reporting. The previous reporting system was managing data by connecting to 3rd database. The new interface is to communicate with 3rd party REST API interface.
+Planing  Review the API document and plan to implement to existing system Consider exception cases - how to manage each exception Create flow chart  Implementation  Java 8, tomcat 8 Used Apache HttpClient GET, POST, DELETE  " />
 <meta name="keywords" content="" />
 <meta name="robots" content="noodp" />
 <meta name="theme-color" content="" />
-<link rel="canonical" href="https://emma-kang.github.io/projects/django-rest-api/" />
+<link rel="canonical" href="https://emma-kang.github.io/projects/new-interface-integration/" />
 
 
     <title>
         
-            [Personal] Django Rest API :: EMMA KANG 
+            [Work] New Interface Integration :: EMMA KANG 
         
     </title>
 
@@ -44,36 +42,30 @@ https://stark-citadel-85128.herokuapp.com/api/" />
 
 
 
-<meta itemprop="name" content="[Personal] Django Rest API">
-<meta itemprop="description" content="This is simple survey API with Python and Django. The API was implemented by using Django REST framework and the webservice only allow GET.
-The sample data was stored on PostgreSQLServer and deployed on Heroku.
-Github
-https://stark-citadel-85128.herokuapp.com/api/"><meta itemprop="datePublished" content="2020-05-08T00:00:00&#43;00:00" />
-<meta itemprop="dateModified" content="2020-05-08T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="37"><meta itemprop="image" content="https://emma-kang.github.io"/>
+<meta itemprop="name" content="[Work] New Interface Integration">
+<meta itemprop="description" content="A new interface had to be applied to one type of existing system reporting. The previous reporting system was managing data by connecting to 3rd database. The new interface is to communicate with 3rd party REST API interface.
+Planing  Review the API document and plan to implement to existing system Consider exception cases - how to manage each exception Create flow chart  Implementation  Java 8, tomcat 8 Used Apache HttpClient GET, POST, DELETE  "><meta itemprop="datePublished" content="2021-05-04T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2021-05-04T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="73"><meta itemprop="image" content="https://emma-kang.github.io"/>
 <meta itemprop="keywords" content="" />
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://emma-kang.github.io"/>
 
-<meta name="twitter:title" content="[Personal] Django Rest API"/>
-<meta name="twitter:description" content="This is simple survey API with Python and Django. The API was implemented by using Django REST framework and the webservice only allow GET.
-The sample data was stored on PostgreSQLServer and deployed on Heroku.
-Github
-https://stark-citadel-85128.herokuapp.com/api/"/>
+<meta name="twitter:title" content="[Work] New Interface Integration"/>
+<meta name="twitter:description" content="A new interface had to be applied to one type of existing system reporting. The previous reporting system was managing data by connecting to 3rd database. The new interface is to communicate with 3rd party REST API interface.
+Planing  Review the API document and plan to implement to existing system Consider exception cases - how to manage each exception Create flow chart  Implementation  Java 8, tomcat 8 Used Apache HttpClient GET, POST, DELETE  "/>
 
 
 
 
-    <meta property="og:title" content="[Personal] Django Rest API" />
-<meta property="og:description" content="This is simple survey API with Python and Django. The API was implemented by using Django REST framework and the webservice only allow GET.
-The sample data was stored on PostgreSQLServer and deployed on Heroku.
-Github
-https://stark-citadel-85128.herokuapp.com/api/" />
+    <meta property="og:title" content="[Work] New Interface Integration" />
+<meta property="og:description" content="A new interface had to be applied to one type of existing system reporting. The previous reporting system was managing data by connecting to 3rd database. The new interface is to communicate with 3rd party REST API interface.
+Planing  Review the API document and plan to implement to existing system Consider exception cases - how to manage each exception Create flow chart  Implementation  Java 8, tomcat 8 Used Apache HttpClient GET, POST, DELETE  " />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://emma-kang.github.io/projects/django-rest-api/" /><meta property="og:image" content="https://emma-kang.github.io"/><meta property="article:section" content="projects" />
-<meta property="article:published_time" content="2020-05-08T00:00:00&#43;00:00" />
-<meta property="article:modified_time" content="2020-05-08T00:00:00&#43;00:00" />
-<meta property="og:see_also" content="https://emma-kang.github.io/projects/spring-booking-webservice/" /><meta property="og:see_also" content="https://emma-kang.github.io/projects/express-bookbox/" /><meta property="og:see_also" content="https://emma-kang.github.io/projects/spring-web-board/" />
+<meta property="og:url" content="https://emma-kang.github.io/projects/new-interface-integration/" /><meta property="og:image" content="https://emma-kang.github.io"/><meta property="article:section" content="projects" />
+<meta property="article:published_time" content="2021-05-04T00:00:00&#43;00:00" />
+<meta property="article:modified_time" content="2021-05-04T00:00:00&#43;00:00" />
+<meta property="og:see_also" content="https://emma-kang.github.io/projects/paypal-integration/" /><meta property="og:see_also" content="https://emma-kang.github.io/projects/reengineering-process/" /><meta property="og:see_also" content="https://emma-kang.github.io/projects/toll-system-management/" />
 
 
 
@@ -81,7 +73,7 @@ https://stark-citadel-85128.herokuapp.com/api/" />
 
 
 
-    <meta property="article:published_time" content="2020-05-08 00:00:00 &#43;0000 UTC" />
+    <meta property="article:published_time" content="2021-05-04 00:00:00 &#43;0000 UTC" />
 
 
 
@@ -143,21 +135,26 @@ https://stark-citadel-85128.herokuapp.com/api/" />
         </div>
 
         <article>
-            <h2 class="post-title"><a href="https://emma-kang.github.io/projects/django-rest-api/">[Personal] Django Rest API</a></h2>
+            <h2 class="post-title"><a href="https://emma-kang.github.io/projects/new-interface-integration/">[Work] New Interface Integration</a></h2>
 
             
             
             
 
             <div class="post-content">
-                <p>This is simple survey API with Python and Django. The API was implemented by using Django REST framework and the webservice only allow GET.</p>
-<p>The sample data was stored on PostgreSQLServer and deployed on Heroku.</p>
-
-    <img src="https://emma-kang.github.io/img/django-api.png"  alt="django-api"  class="center"  />
-
-
-<p><a href="https://github.com/emma-kang/django-rest-api">Github</a></p>
-<p><a href="https://stark-citadel-85128.herokuapp.com/api/">https://stark-citadel-85128.herokuapp.com/api/</a></p>
+                <p>A new interface had to be applied to one type of existing system reporting. The previous reporting system was managing data by connecting to 3rd database. The new interface is to communicate with 3rd party REST API interface.</p>
+<h3 id="planing">Planing</h3>
+<ul>
+<li>Review the API document and plan to implement to existing system</li>
+<li>Consider exception cases - how to manage each exception</li>
+<li>Create flow chart</li>
+</ul>
+<h3 id="implementation">Implementation</h3>
+<ul>
+<li>Java 8, tomcat 8</li>
+<li>Used Apache <code>HttpClient</code></li>
+<li><code>GET</code>, <code>POST</code>, <code>DELETE</code></li>
+</ul>
 
             </div>
         </article>

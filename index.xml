@@ -7,7 +7,61 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Fri, 08 May 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://emma-kang.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 31 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://emma-kang.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[Personal] Spring Booking Web Service</title>
+      <link>https://emma-kang.github.io/projects/spring-booking-webservice/</link>
+      <pubDate>Mon, 31 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://emma-kang.github.io/projects/spring-booking-webservice/</guid>
+      <description>This is personal project for study room booking webservice. The purpose of this project is to reinforce the knowledge of Spring framework, security, and Junit testing.
+I am currently working on this project with learning testing online lecture.
+@Service public class BookingServiceImpl implements BookingService { final static Logger logger = LoggerFactory.getLogger(BookingServiceImpl.class); private final BookingDAO bookingDAO; public BookingServiceImpl(BookingDAO bookingDAO) { this.bookingDAO = bookingDAO; } @Override public BookingDTO getBookingInfoByUserId(int userid) { return bookingDAO.</description>
+    </item>
+    
+    <item>
+      <title>[Work] New Interface Integration</title>
+      <link>https://emma-kang.github.io/projects/new-interface-integration/</link>
+      <pubDate>Tue, 04 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://emma-kang.github.io/projects/new-interface-integration/</guid>
+      <description>A new interface had to be applied to one type of existing system reporting. The previous reporting system was managing data by connecting to 3rd database. The new interface is to communicate with 3rd party REST API interface.
+Planing  Review the API document and plan to implement to existing system Consider exception cases - how to manage each exception Create flow chart  Implementation  Java 8, tomcat 8 Used Apache HttpClient GET, POST, DELETE  </description>
+    </item>
+    
+    <item>
+      <title>[Work] PayPal Integration</title>
+      <link>https://emma-kang.github.io/projects/paypal-integration/</link>
+      <pubDate>Sun, 31 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://emma-kang.github.io/projects/paypal-integration/</guid>
+      <description>As a client requested, the customer website needed to support the PayPal method as one of payment. Firstly, I reviewed the PayPal official document and investigate the current system how to apply it. It was decided to use PayPal&amp;rsquo;s smart button through team meetings because it was the simplest way.
+ Modified current system JavaScript code to apply Smart button Modified payment handling process code in the current system in order to process the result of payment into the system (Payment process controller) Modified current UI on customer website After PayPal integrated, the back office and financial report were required to modified for PayPal.</description>
+    </item>
+    
+    <item>
+      <title>[Work] Re-engineering process</title>
+      <link>https://emma-kang.github.io/projects/reengineering-process/</link>
+      <pubDate>Mon, 18 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://emma-kang.github.io/projects/reengineering-process/</guid>
+      <description>As the 3rd data provider changed, related processes in the system were needed to update as new requirements. The processes are an important part in the system since it is associated with toll transactions. Previous processes were designed as SQL procedures but it had a drawback that was hard to track exception. Therefore, new processes were decided to implement as Java processes.
+Plan  Investigate the system database table and design new database structure for the transactions Based on the new data table design, planed Java processes  Issues  After implemented and released to production, it has issues on performance since the process had bad logic to handle huge transaction data.</description>
+    </item>
+    
+    <item>
+      <title>[Personal] Express bookbox API</title>
+      <link>https://emma-kang.github.io/projects/express-bookbox/</link>
+      <pubDate>Sun, 12 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://emma-kang.github.io/projects/express-bookbox/</guid>
+      <description>This is a personal project to show book information stored in the database. I used Swagger for API documentation. The purpose of this project is to learn Node.js and Express as back-end code.
+Tech stack  Node.js (Express) PostgreSQL  Swagger docs
+Github Code
+For front-end part, I used React.js and the code was commit to different repository.
+Github Frontend repository</description>
+    </item>
+    
     <item>
       <title>[Personal] Django Rest API</title>
       <link>https://emma-kang.github.io/projects/django-rest-api/</link>
@@ -18,6 +72,16 @@
 The sample data was stored on PostgreSQLServer and deployed on Heroku.
 Github
 https://stark-citadel-85128.herokuapp.com/api/</description>
+    </item>
+    
+    <item>
+      <title>[Personal] Spring Web Board</title>
+      <link>https://emma-kang.github.io/projects/spring-web-board/</link>
+      <pubDate>Wed, 06 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://emma-kang.github.io/projects/spring-web-board/</guid>
+      <description>This is personal project for Web board with Spring framework. Users can create/read/update/delete posting on the board. Basically, the web board built with Spring MVC and Thymeleaf template view engine.
+Tech Stack  Java Spring MVC MySQL, Hibernate Thymeleaf  @Controller public class WritePostController { private PostDTO postDTO; private PostService postService; private UserService userService; @Autowired public void setUserService(@Qualifier(&amp;#34;userService&amp;#34;) UserService us) { this.userService = us; } @Autowired public void setPostService(@Qualifier(&amp;#34;postService&amp;#34;) PostService ps) { this.</description>
     </item>
     
     <item>

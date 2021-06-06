@@ -7,7 +7,37 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Sat, 01 Jun 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://emma-kang.github.io/series/work-project/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 04 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://emma-kang.github.io/series/work-project/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[Work] New Interface Integration</title>
+      <link>https://emma-kang.github.io/projects/new-interface-integration/</link>
+      <pubDate>Tue, 04 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://emma-kang.github.io/projects/new-interface-integration/</guid>
+      <description>A new interface had to be applied to one type of existing system reporting. The previous reporting system was managing data by connecting to 3rd database. The new interface is to communicate with 3rd party REST API interface.
+Planing  Review the API document and plan to implement to existing system Consider exception cases - how to manage each exception Create flow chart  Implementation  Java 8, tomcat 8 Used Apache HttpClient GET, POST, DELETE  </description>
+    </item>
+    
+    <item>
+      <title>[Work] PayPal Integration</title>
+      <link>https://emma-kang.github.io/projects/paypal-integration/</link>
+      <pubDate>Sun, 31 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://emma-kang.github.io/projects/paypal-integration/</guid>
+      <description>As a client requested, the customer website needed to support the PayPal method as one of payment. Firstly, I reviewed the PayPal official document and investigate the current system how to apply it. It was decided to use PayPal&amp;rsquo;s smart button through team meetings because it was the simplest way.
+ Modified current system JavaScript code to apply Smart button Modified payment handling process code in the current system in order to process the result of payment into the system (Payment process controller) Modified current UI on customer website After PayPal integrated, the back office and financial report were required to modified for PayPal.</description>
+    </item>
+    
+    <item>
+      <title>[Work] Re-engineering process</title>
+      <link>https://emma-kang.github.io/projects/reengineering-process/</link>
+      <pubDate>Mon, 18 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://emma-kang.github.io/projects/reengineering-process/</guid>
+      <description>As the 3rd data provider changed, related processes in the system were needed to update as new requirements. The processes are an important part in the system since it is associated with toll transactions. Previous processes were designed as SQL procedures but it had a drawback that was hard to track exception. Therefore, new processes were decided to implement as Java processes.
+Plan  Investigate the system database table and design new database structure for the transactions Based on the new data table design, planed Java processes  Issues  After implemented and released to production, it has issues on performance since the process had bad logic to handle huge transaction data.</description>
+    </item>
+    
     <item>
       <title>[Work] Toll System Management</title>
       <link>https://emma-kang.github.io/projects/toll-system-management/</link>
