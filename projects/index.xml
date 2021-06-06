@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>EMMA KANG</title>
-    <link>https://emma-kang.github.io/</link>
-    <description>Recent content on EMMA KANG</description>
+    <title>Projects on EMMA KANG</title>
+    <link>https://emma-kang.github.io/projects/</link>
+    <description>Recent content in Projects on EMMA KANG</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Fri, 08 May 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://emma-kang.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 08 May 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://emma-kang.github.io/projects/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>[Personal] Django Rest API</title>
       <link>https://emma-kang.github.io/projects/django-rest-api/</link>
@@ -29,17 +29,6 @@ https://stark-citadel-85128.herokuapp.com/api/</description>
       <description>2019-06-01 ~ Present
 As a work project, I am responsible to operate the tolling system. The system consists of two web applications and a script process. The main responsibility is improving legacy code and developing new features to the existing program. I developed new functions on the application in clients&#39; request. The details of the work are as follow:
 Scripts  Toll transaction data handling, email sender, SFTP file exchange, and other scheduled process Java, shell scripts, Quartz job scheduler  Web Applications  Back Office web application and Customer web site Fix bug and develop new feature on exisiting application Create release version and deploy to production Java, Spring Boot, Spring MVC, maven, Node.</description>
-    </item>
-    
-    <item>
-      <title>About Me</title>
-      <link>https://emma-kang.github.io/about/</link>
-      <pubDate>Sun, 23 May 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://emma-kang.github.io/about/</guid>
-      <description>I am a Jr. Software Developer who is aspiring to become a full-stack developer.
-I&amp;rsquo;m an optimistic, responsible, and hard-working person. I&amp;rsquo;m willing to dive into good projects no matter how pressure it is. I am able to enjoy working if there are only three C things: coffee, chocolate, and a computer. ☕ 🍫 💻
-📗 Education  Diploma in Computer Programmer, Seneca College CA, Sep 2017 - Dec 2018 Bachelor in Biomedical Science, Inje Univ KOR, Mar 2008 - Feb 2012  🏢 Work  Jr.</description>
     </item>
     
   </channel>
